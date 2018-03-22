@@ -39,6 +39,7 @@ function start_db2 {
   su - db2inst1 -c "db2start"
 }
 
+
 function restart_db2 {
   # if you just need to restart db2 and not to kill this container
   # use docker kill -s USR1 <container name>
