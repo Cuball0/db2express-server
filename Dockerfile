@@ -7,4 +7,4 @@ COPY assets/createdb.sh /scripts/createdb.sh
 RUN chmod +x /scripts/createdb.sh
 RUN su - db2inst1 -c /scripts/createdb.sh
 
-ENTRYPOINT ["db2start"]
+ENTRYPOINT ["/entrypoint.sh"]
